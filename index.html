@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>よりみちコンディショニング｜埼玉県本庄市児玉町</title>
+<meta name="description" content="埼玉県本庄市児玉町のよりみちコンディショニング。筋肉だけでなく、関節から整えます。月・水・金・日の18時から21時、完全予約制。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- ▼ 差し替え：公開URL（VercelのドメインまたはFQDN） -->
+<meta property="og:url" content="https://example.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="よりみちコンディショニング｜埼玉県本庄市児玉町">
+<meta property="og:description" content="筋肉だけでなく、関節から整えます。月・水・金・日の18時から21時、完全予約制。">
+<meta property="og:image" content="https://example.vercel.app/images/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#fff;
+  --ink:#2c3a52;
+  --ink-soft:#6b7a94;
+  --ink-faint:#9aa6ba;
+  --rule:#e4e7ec;
+  --mist:#f5f6f8;
+  --pad:22px;
+  --sec:96px;
+}
+@media(min-width:768px){:root{--pad:40px;--sec:150px}}
+@media(min-width:1100px){:root{--pad:60px;--sec:190px}}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Shippori Mincho",serif;font-weight:400;
+  font-size:14px;line-height:2.1;letter-spacing:.08em;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{display:block;width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+section{margin-bottom:var(--sec)}
+.wrap{padding:0 var(--pad)}
+.narrow{max-width:520px}
+
+/* ---- header ---- */
+header{display:flex;justify-content:space-between;align-items:flex-start;padding:22px var(--pad) 0}
+.logo .en{font-family:"Jost",sans-serif;font-weight:300;font-size:10px;letter-spacing:.3em;line-height:1.75}
+.logo .bar{width:70px;height:1px;background:var(--ink-soft);margin:8px 0}
+.logo .ja{font-size:12.5px;letter-spacing:.16em;font-weight:500}
+.logo .ja b{font-size:15px;letter-spacing:.22em;font-weight:500}
+nav{display:none}
+@media(min-width:900px){
+  nav{display:flex;gap:26px;writing-mode:vertical-rl;font-size:12px;letter-spacing:.18em}
+  nav a:hover{color:var(--ink-soft)}
+}
+
+/* ---- headings ---- */
+.head{font-size:15px;font-weight:500;letter-spacing:.22em}
+.head::after{content:"";display:block;width:26px;height:1px;background:var(--ink-soft);margin:16px 0 32px}
+.head-c{text-align:center}
+.head-c::after{margin-left:auto;margin-right:auto}
+.label{font-size:11px;color:var(--ink-soft);letter-spacing:.22em;border-bottom:1px solid var(--rule);display:block;padding-bottom:8px;margin:34px 0 16px}
+
+/* ---- open bar ---- */
+.openbar{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:26px;padding:15px var(--pad);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 16px;font-size:12px;letter-spacing:.16em}
+.openbar b{font-weight:500}
+.openbar .num{font-family:"Jost",sans-serif;font-weight:300;font-size:15px;letter-spacing:.06em}
+.openbar .sep{width:1px;height:12px;background:var(--rule)}
+.openbar .sun{color:var(--ink-soft);font-size:11px}
+@media(min-width:768px){.openbar{gap:10px 22px;font-size:12.5px}}
+
+/* ---- hero ---- */
+.hero{position:relative;margin-bottom:var(--sec);animation:hFade 1.4s ease both}
+.hero img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:58% 18%}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(178deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 22%,rgba(255,255,255,.55) 40%,rgba(255,255,255,0) 58%)}
+.hero-copy{position:absolute;top:0;left:0;right:0;z-index:2;padding:34px var(--pad) 0}
+.hero h1{font-size:22px;font-weight:500;line-height:2;letter-spacing:.14em;animation:hRise 1s cubic-bezier(.22,.7,.2,1) both .3s}
+.hero .sub{color:var(--ink-soft);font-size:12.5px;margin-top:20px;line-height:2.3;animation:hRise 1s cubic-bezier(.22,.7,.2,1) both .6s}
+@media(min-width:768px){
+  .hero img{aspect-ratio:16/9;object-position:66% 22%}
+  .hero::after{background:linear-gradient(92deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 26%,rgba(255,255,255,.5) 44%,rgba(255,255,255,0) 62%)}
+  .hero-copy{top:50%;transform:translateY(-50%);right:auto;width:52%;padding:0 0 0 var(--pad)}
+  .hero h1{font-size:27px}
+}
+@media(min-width:1100px){
+  .hero-copy{width:46%}
+  .hero h1{font-size:32px}
+}
+@keyframes hRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes hFade{from{opacity:0}to{opacity:1}}
+
+/* ---- pillars ---- */
+.pillars{display:grid;gap:46px;border-top:1px solid var(--rule);padding-top:48px}
+@media(min-width:768px){.pillars{grid-template-columns:repeat(3,1fr);gap:40px}}
+.pillar .n{font-family:"Jost",sans-serif;font-weight:300;font-size:11px;letter-spacing:.2em;color:var(--ink-faint);display:block;margin-bottom:12px}
+.pillar b{display:block;font-size:15.5px;font-weight:500;letter-spacing:.12em;line-height:1.95;margin-bottom:14px}
+.pillar p{font-size:12.5px;color:var(--ink-soft);line-height:2.25}
+.tag{text-align:center;font-size:14px;letter-spacing:.24em;color:var(--ink-soft);margin-top:54px}
+
+/* ---- stats ---- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:30px 0 6px}
+.stat{background:var(--paper);padding:22px 8px;text-align:center}
+.stat b{font-family:"Jost",sans-serif;font-weight:400;font-size:27px;letter-spacing:.02em;line-height:1.2;display:inline-flex;align-items:baseline;gap:3px}
+.stat b em{font-family:"Shippori Mincho",serif;font-style:normal;font-size:12px;font-weight:400;letter-spacing:.06em}
+.stat span{display:block;font-size:10.5px;color:var(--ink-soft);line-height:1.85;margin-top:9px}
+@media(max-width:400px){.stat b{font-size:22px}.stat span{font-size:9.5px}}
+
+/* ---- cv ---- */
+.cv{width:100%;border-collapse:collapse}
+.cv th{width:82px;text-align:left;font-weight:400;color:var(--ink-soft);font-size:11.5px;vertical-align:top;padding:12px 0}
+.cv td{font-size:12.5px;padding:12px 0;border-bottom:1px solid var(--rule);line-height:1.95}
+@media(max-width:520px){
+  .cv,.cv tbody,.cv tr,.cv th,.cv td{display:block;width:auto}
+  .cv th{padding:14px 0 2px}
+  .cv td{padding:0 0 14px;border-bottom:1px solid var(--rule)}
+}
+
+/* ---- menu ---- */
+.menu{border-top:1px solid var(--rule)}
+.mitem{border-bottom:1px solid var(--rule);padding:30px 0;display:grid;gap:12px}
+@media(min-width:768px){.mitem{grid-template-columns:230px 1fr;gap:40px;padding:34px 0}}
+.mitem h3{font-size:15.5px;font-weight:500;letter-spacing:.14em;display:flex;gap:12px;align-items:center;line-height:1.9}
+.mitem h3 svg{width:40px;height:40px;stroke:var(--ink-soft);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.mitem h3 em{font-family:"Jost",sans-serif;font-style:normal;font-weight:300;font-size:13px;color:var(--ink-faint)}
+.mitem p{font-size:12.5px;color:var(--ink-soft);line-height:2.2}
+.mitem p+p{margin-top:12px}
+.notice{border:1px solid var(--rule);padding:22px 24px;max-width:520px;margin:26px auto 0;font-size:12px;color:var(--ink-soft);line-height:2.2}
+
+/* ---- flow ---- */
+.flow{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media(min-width:640px){.flow{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.flow{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--paper);padding:24px 20px}
+.step em{font-family:"Jost",sans-serif;font-style:normal;font-weight:300;font-size:11px;letter-spacing:.2em;color:var(--ink-faint)}
+.step b{display:block;font-weight:500;font-size:14px;margin:9px 0 7px;letter-spacing:.14em}
+.step p{font-size:11.5px;color:var(--ink-soft);line-height:2}
+
+/* ---- cards ---- */
+.cards{display:grid;gap:12px}
+@media(min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--ink-soft);color:#fff;padding:32px 26px 28px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.card svg{width:54px;height:54px;margin-bottom:18px;stroke:#fff;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.card b{display:block;font-size:15px;font-weight:500;letter-spacing:.16em;margin-bottom:6px}
+.card .when{display:block;font-size:11px;letter-spacing:.14em;opacity:.72;margin-bottom:15px}
+.card ul{list-style:none;width:100%}
+.card li{font-size:12px;line-height:2.25;opacity:.94}
+
+/* ---- promise ---- */
+.promise{border-top:1px solid var(--rule)}
+.promise li{list-style:none;border-bottom:1px solid var(--rule);padding:22px 0;font-size:13.5px;letter-spacing:.1em;line-height:1.95}
+.promise li span{display:block;font-size:11.5px;color:var(--ink-soft);margin-top:8px;line-height:2}
+
+/* ---- fee ---- */
+.fee{text-align:center;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:38px 16px;max-width:460px;margin:0 auto}
+.fee .t{font-size:12.5px;color:var(--ink-soft);letter-spacing:.2em}
+.fee b{display:inline-flex;align-items:baseline;gap:5px;font-family:"Jost",sans-serif;font-weight:300;font-size:44px;letter-spacing:.02em;margin-top:12px}
+.fee b em{font-family:"Shippori Mincho",serif;font-style:normal;font-size:15px;font-weight:400}
+.note{font-size:11px;color:var(--ink-soft);text-align:center;margin-top:18px;line-height:2.1}
+
+.price{width:100%;max-width:480px;margin:0 auto;border-collapse:collapse}
+.price th{background:var(--ink);color:#fff;font-weight:400;font-size:12px;letter-spacing:.14em;padding:14px 8px}
+.price th:first-child{width:32%}
+.price td{border:1px solid var(--rule);text-align:center;padding:20px 6px;font-size:12.5px}
+.price td.rh{background:var(--mist);letter-spacing:.1em;font-size:12px}
+.price td.amt{font-family:"Jost",sans-serif;font-weight:300;font-size:22px;letter-spacing:.02em}
+.price td.amt em{font-family:"Shippori Mincho",serif;font-style:normal;font-size:12px}
+@media(max-width:420px){.price td.amt{font-size:18px}.price th{font-size:11px}}
+
+/* ---- hours ---- */
+.hours{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:24px 0;max-width:520px}
+.hours dl{display:grid;grid-template-columns:80px 1fr;gap:13px 0;font-size:13px}
+.hours dt{color:var(--ink-soft);font-size:11.5px}
+
+/* ---- reserve ---- */
+.rsv{border-top:1px solid var(--rule);margin-top:34px;padding-top:30px}
+.rsv-steps{display:grid;gap:18px;margin:20px 0 30px}
+@media(min-width:640px){.rsv-steps{grid-template-columns:repeat(3,1fr);gap:26px}}
+.rsv-steps div{display:flex;gap:11px;align-items:flex-start}
+.rsv-steps em{font-family:"Jost",sans-serif;font-style:normal;font-weight:300;font-size:12px;letter-spacing:.14em;color:var(--ink-faint);padding-top:3px;flex-shrink:0}
+.rsv-steps p{font-size:12.5px;line-height:2.05}
+.rsv-steps p span{display:block;font-size:11px;color:var(--ink-soft);line-height:1.95;margin-top:3px}
+.rsv-btns{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+.rsv-btns .btn{margin-top:0}
+
+/* ---- mobile cta ---- */
+.mcta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--ink)}
+.mcta a{flex:1;color:#fff;text-align:center;padding:16px 8px;font-size:12.5px;letter-spacing:.14em}
+.mcta a+a{border-left:1px solid rgba(255,255,255,.22)}
+@media(min-width:768px){.mcta{display:none}}
+@media(max-width:767px){.sns{display:none}body{padding-bottom:54px}}
+
+/* ---- button ---- */
+.btn{display:inline-flex;align-items:center;margin-top:28px}
+.btn span{border:1px solid var(--ink-soft);border-radius:999px;padding:13px 30px;font-size:12.5px;letter-spacing:.2em;transition:.3s}
+.btn i{display:block;width:30px;height:1px;background:var(--ink-soft)}
+.btn u{display:block;width:6px;height:6px;border-radius:50%;background:var(--ink-soft)}
+.btn:hover span{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn-fill span{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn-fill:hover span{opacity:.85}
+.center{text-align:center}
+
+/* ---- two column ---- */
+.two{display:grid;gap:34px}
+@media(min-width:900px){.two{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--rule);padding-top:40px}
+.fnav{display:flex;flex-wrap:wrap;gap:18px 26px;justify-content:center;font-size:12px;letter-spacing:.14em;padding-bottom:36px;border-bottom:1px solid var(--rule);margin-bottom:40px}
+.finfo{display:grid;gap:28px}
+@media(min-width:900px){.finfo{grid-template-columns:220px 1fr}}
+.tel{font-family:"Jost",sans-serif;font-weight:300;font-size:24px;letter-spacing:.06em;display:inline-flex;align-items:center;gap:11px}
+.tel small{background:var(--ink);color:#fff;border-radius:999px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.06em;flex-shrink:0}
+.sns{position:fixed;right:12px;bottom:14px;display:grid;gap:8px;z-index:9}
+.sns a{width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.05em;font-family:"Jost",sans-serif}
+.copy{text-align:center;font-size:10px;color:var(--ink-faint);padding:36px 0 70px;letter-spacing:.18em;font-family:"Jost",sans-serif}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#top" class="logo">
+    <div class="en">YORIMICHI<br>CONDITIONING</div>
+    <div class="bar"></div>
+    <div class="ja"><b>よりみち</b>コンディショニング</div>
+  </a>
+  <nav>
+    <a href="#about">施術者について</a>
+    <a href="#menu">施術の内容</a>
+    <a href="#flow">施術の流れ</a>
+    <a href="#for">こんな方に</a>
+    <a href="#price">料金</a>
+    <a href="#access">アクセス</a>
+  </nav>
+</header>
+
+<div class="openbar">
+  <b>月・水・金・日</b>
+  <span class="sep"></span>
+  <span class="num">18:00 – 21:00</span>
+  <span class="sep"></span>
+  <span class="sun">日曜も、夜9時まで</span>
+</div>
+
+<section class="hero" id="top">
+  <img src="images/hero.jpg" alt="施術のようす">
+  <div class="hero-copy">
+    <h1>筋肉だけでなく、<br>関節から整える。</h1>
+    <p class="sub">高崎で6年、のべ24,000人。<br>埼玉県本庄市児玉町、完全予約制。</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="pillars">
+    <div class="pillar">
+      <span class="n">01</span>
+      <b>同じところが、<br>また痛くなる。</b>
+      <p>その場がやわらいでも、原因が残っていれば戻ります。からだの根本が変わらないかぎり、同じ症状は繰り返します。</p>
+    </div>
+    <div class="pillar">
+      <span class="n">02</span>
+      <b>筋肉ではなく、<br>関節から。</b>
+      <p>多くの施術は筋肉にはたらきかけます。よりみちは、からだの芯である骨格から入ります。負担が少なく、最短での変化を目指せます。</p>
+    </div>
+    <div class="pillar">
+      <span class="n">03</span>
+      <b>帰ったあとに、<br>続きがある。</b>
+      <p>30分でできることには限りがあります。だから、明日から自分でできることを必ずお伝えします。ここが本体です。</p>
+    </div>
+  </div>
+  <p class="tag">痛くなる前に、寄り道を。</p>
+</section>
+
+<section class="wrap" id="about">
+  <h2 class="head">施術者について</h2>
+  <div class="two">
+    <div>
+      <p style="font-size:15px;letter-spacing:.14em;line-height:2.1">木下 潤平<span style="font-size:11px;color:var(--ink-soft);margin-left:14px">柔道整復師</span></p>
+      <p class="narrow" style="margin-top:22px">からだの芯である骨格から整えることで、負担を少なく、最短での変化を目指します。</p>
+      <p class="narrow" style="margin-top:22px">多くの施術は筋肉にはたらきかけます。よりみちは、関節から入ります。身につけるまでに3〜4年かかった技術です。</p>
+      <div class="stats">
+        <div class="stat"><b>6<em>年</em></b><span>高崎の接骨院で<br>勤務</span></div>
+        <div class="stat"><b>15<em>人</em></b><span>1日あたり<br>年間およそ4,000人</span></div>
+        <div class="stat"><b>24,000<em>人</em></b><span>これまでに<br>担当した人数</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">経歴</div>
+      <table class="cv">
+        <tr><th>◯◯◯◯年</th><td>柔道整復師 免許取得</td></tr>
+        <tr><th>◯◯◯◯年</th><td>ふなと川接骨院グループ（群馬県高崎市）勤務。1日およそ15人を担当</td></tr>
+        <tr><th>◯◯◯◯年</th><td>関節からのアプローチを習得。身につけるまでに3〜4年を要した</td></tr>
+        <tr><th>2026年</th><td>6年の勤務を経て、埼玉県本庄市児玉町にてよりみちコンディショニング開業</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="menu">
+  <h2 class="head">施術の内容</h2>
+  <p class="narrow" style="margin-bottom:30px">30分のなかで、この3つをおこないます。料金はどれも同じです。</p>
+  <div class="menu">
+
+    <div class="mitem">
+      <h3><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 q-7 8 0 15 q7 8 0 15"/><path d="M18 40 q6 -5 14 -5 q8 0 14 5"/><path d="M18 40 q-1 10 4 15 M46 40 q1 10 -4 15"/><path d="M24 47 h16"/></svg><em>01</em>骨盤・骨格の調整</h3>
+      <div>
+        <p>からだの芯である骨格から整えます。土台である骨盤から順に見ていくので、負担が少なく、最短での変化を目指せます。</p>
+        <p>多くの施術は筋肉にはたらきかけます。関節から入れることが、よりみちの中身そのものです。</p>
+      </div>
+    </div>
+
+    <div class="mitem">
+      <h3><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M26 6 q-4 14 0 26 q3 12 0 26"/><path d="M42 6 q4 14 0 26 q-3 12 0 26"/><path d="M18 24 L48 40"/><path d="M48 24 L18 40"/></svg><em>02</em>テーピング</h3>
+      <div>
+        <p>その場で貼るだけでなく、<strong style="font-weight:500;color:var(--ink)">巻き方をお教えします</strong>。自分で巻けるようになれば、そのために毎回来ていただく必要がなくなります。</p>
+        <p>部活の遠征先でも、仕事の現場でも、自分で対処できるように。覚えてしまえば一生使えます。</p>
+      </div>
+    </div>
+
+    <div class="mitem">
+      <h3><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="24" cy="12" r="5"/><path d="M24 20 v13 M24 33 l-6 15 M24 33 l7 14"/><path d="M24 24 l-9 7 M24 24 l11 4"/><path d="M42 20 q9 4 9 13 q0 9 -9 13"/><path d="M48 14 q14 7 14 19 q0 12 -14 19"/></svg><em>03</em>セルフケアの助言</h3>
+      <div>
+        <p>30分でできることには限りがあります。だから、明日から自分でできることを必ずお伝えします。</p>
+        <p>同じところが繰り返し痛くなるのを防ぐには、ここがいちばん効きます。よりみちにとっては、これが本体です。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="wrap" id="flow">
+  <h2 class="head">施術の流れ</h2>
+  <p class="narrow" style="margin-bottom:32px">1枠30分です。問診は初回のみおこないます。</p>
+  <div class="flow">
+    <div class="step"><em>01</em><b>問診<span style="font-size:10.5px;color:var(--ink-faint);margin-left:6px">初回のみ</span></b><p>いつから、どこが、どんなときに。これまでのケガや不調も伺います。</p></div>
+    <div class="step"><em>02</em><b>視診・触診</b><p>立ち方、動き方、関節の動く範囲を見ます。</p></div>
+    <div class="step"><em>03</em><b>検査・評価</b><p>どこが原因かを確かめ、そのままお伝えします。</p></div>
+    <div class="step"><em>04</em><b>施術・助言</b><p>整えたあと、明日から自分でできることをお伝えします。</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="for">
+  <h2 class="head head-c">こんな方に</h2>
+  <div class="cards">
+
+    <div class="card">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="38" cy="12" r="5"/>
+        <path d="M36 20 L27 32 L17 37"/>
+        <path d="M36 20 L46 26 L44 38 L50 52"/>
+        <path d="M27 32 L31 42 L23 54"/>
+        <path d="M38 22 L50 19"/>
+        <path d="M9 24 h8 M7 32 h7"/>
+      </svg>
+      <b>部活を続ける中高生</b>
+      <span class="when">部活帰りに</span>
+      <ul><li>足が張ってしょうがない</li><li>疲れが抜けないまま次の練習へ</li><li>からだが硬い、動きが伸びない</li></ul>
+    </div>
+
+    <div class="card">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="20" cy="13" r="5"/>
+        <path d="M20 21 v14 M20 35 l-6 14 M20 35 l7 13"/>
+        <path d="M20 25 l14 5"/>
+        <path d="M38 34 q9 -5 15 2 q-7 8 -15 4 z"/>
+        <path d="M50 12 q4 3 0 7 M55 9 q7 6 0 13"/>
+      </svg>
+      <b>介護・看護のお仕事</b>
+      <span class="when">遅番上がり、夜勤前に</span>
+      <ul><li>移乗介助で腰にくる</li><li>夜勤明けに全身が重い</li><li>肩、手首がずっとだるい</li></ul>
+    </div>
+
+    <div class="card">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="26" cy="13" r="5"/>
+        <path d="M26 21 v15 M26 36 l-5 15 M26 36 l6 15"/>
+        <path d="M26 25 l10 -6 l8 4"/>
+        <path d="M42 21 h13 M55 21 v4 a6 6 0 0 1 -12 0 v-4"/>
+        <path d="M14 16 q4 3 0 7"/>
+      </svg>
+      <b>家事で手や肩を使う方</b>
+      <span class="when">家事が終わったあとに</span>
+      <ul><li>皿洗いのあと指が痛い</li><li>フライパンが持ち上がらない</li><li>掃除機で腰、洗濯物で肩</li></ul>
+    </div>
+
+    <div class="card">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="12" r="5"/>
+        <path d="M32 20 v16 M32 36 l-6 16 M32 36 l6 16"/>
+        <path d="M32 24 l-9 8 M32 24 l9 8"/>
+        <path d="M12 56 h40"/>
+        <path d="M46 26 q4 4 0 8 M52 23 q7 7 0 14"/>
+      </svg>
+      <b>立ち仕事・力仕事の方</b>
+      <span class="when">仕事帰りに</span>
+      <ul><li>立ちっぱなしで足腰が張る</li><li>腰、肩、膝が慢性的に重い</li><li>疲れると決まって痛みが出る</li></ul>
+    </div>
+
+  </div>
+  <p class="note" style="margin-top:22px">急なケガ（骨折・脱臼・打撲・ねんざ）はお受けしていません。そう判断した場合は整形外科をご案内します。</p>
+</section>
+
+<section class="wrap">
+  <h2 class="head">約束</h2>
+  <ul class="promise narrow">
+    <li>首は鳴らしません<span>骨粗しょう症や椎間板ヘルニアなど、調整に向かない状態のときは無理におこないません。ご予約時の問診で必ず確認します。</span></li>
+    <li>回数券や物販の押し売りをしません<span>その日に必要なことだけをお伝えします。</span></li>
+    <li>変化が出ていないのに通っていただくことはしません<span>合わないと判断したら、正直にお伝えします。</span></li>
+    <li>ケガと判断したら、整形外科をご案内します<span>抱え込まないことが、いちばん早い道だと考えています。</span></li>
+    <li>21時を過ぎて施術しません<span>長く続けるための線引きです。</span></li>
+  </ul>
+</section>
+
+<section class="wrap" id="price">
+  <h2 class="head head-c">料金</h2>
+  <table class="price">
+    <tr><th></th><th>おとな</th><th>中高生</th></tr>
+    <tr><td class="rh">初回</td><td class="amt">2,000<em>円</em></td><td class="amt">1,500<em>円</em></td></tr>
+    <tr><td class="rh">2回目以降</td><td class="amt">2,500<em>円</em></td><td class="amt">2,000<em>円</em></td></tr>
+  </table>
+  <p class="note">すべて1枠30分・税込です。<br>初回は、はじめての方だけの料金です。2回目からは上の金額になります。<br>お支払いは現金のみとなります。</p>
+  <div class="notice">いまは、からだを整えることに絞っています。今後、届出が済んでケガも診られるようになりましたら、できることが増えるぶん料金を改定する予定です。それまでは、この価格でお受けします。</div>
+  <!-- ▼ 差し替え：LINE公式アカウントの友だち追加URL -->
+  <div class="center"><a class="btn btn-fill" href="#line"><span>LINEで予約する</span><i></i><u></u></a></div>
+</section>
+
+<section class="wrap">
+  <h2 class="head">営業時間・ご予約</h2>
+  <div class="hours">
+    <dl>
+      <dt>営業日</dt><dd>月・水・金・日<br><span style="font-size:11px;color:var(--ink-soft)">日曜も営業しています</span></dd>
+      <dt>時間</dt><dd>18:00 – 21:00<br><span style="font-size:11px;color:var(--ink-soft)">30分刻み。最終のご予約は20:30です</span></dd>
+      <dt>ご予約</dt><dd>完全予約制<br><span style="font-size:11px;color:var(--ink-soft)">LINE または Googleフォームから24時間受付</span></dd>
+    </dl>
+  </div>
+  <div class="rsv">
+    <h3 style="font-size:13.5px;font-weight:500;letter-spacing:.18em">ご予約の流れ</h3>
+    <div class="rsv-steps">
+      <div><em>01</em><p>ご希望の日時を送る<span>第2希望までいただけると助かります</span></p></div>
+      <div><em>02</em><p>折り返しご連絡<span>こちらから確定のご返信をします</span></p></div>
+      <div><em>03</em><p>当日、ご来院<span>専用の入口からお入りください</span></p></div>
+    </div>
+    <div class="rsv-btns">
+      <!-- ▼ 差し替え：LINE公式アカウントの友だち追加URL -->
+      <a class="btn btn-fill" href="#line"><span>LINEで予約する</span><i></i><u></u></a>
+      <!-- ▼ 差し替え：GoogleフォームのURL -->
+      <a class="btn" href="#form"><span>Googleフォームで予約する</span><i></i><u></u></a>
+    </div>
+    <p style="font-size:11px;color:var(--ink-soft);margin-top:20px;line-height:2">どちらも24時間受け付けています。施術中はご返信が遅れることがあります。</p>
+  </div>
+</section>
+
+<section class="wrap" id="access">
+  <h2 class="head">アクセス</h2>
+  <div class="two">
+    <div>
+      <p>〒367-0216<br>埼玉県本庄市児玉町金屋274-1</p>
+      <p style="margin-top:18px;color:var(--ink-soft);font-size:12.5px">駐車場あり（4台）<br>建物◯側の専用入口からお入りください</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E6%9C%AC%E5%BA%84%E5%B8%82%E5%85%90%E7%8E%89%E7%94%BA%E9%87%91%E5%B1%8B274-1" target="_blank" rel="noopener"><span>Google Maps</span><i></i><u></u></a>
+    </div>
+    <div style="background:var(--mist);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-size:11px">［Googleマップ埋め込み］</div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <div class="fnav">
+    <a href="#about">施術者について</a>
+    <a href="#menu">施術の内容</a>
+    <a href="#flow">施術の流れ</a>
+    <a href="#for">こんな方に</a>
+    <a href="#price">料金</a>
+    <a href="#access">アクセス</a>
+  </div>
+  <div class="finfo">
+    <div class="logo">
+      <div class="en">YORIMICHI<br>CONDITIONING</div>
+      <div class="bar"></div>
+      <div class="ja"><b>よりみち</b>コンディショニング</div>
+      <p style="font-size:11px;color:var(--ink-soft);margin-top:12px">痛くなる前に、寄り道を。</p>
+    </div>
+    <div>
+      <a class="tel" href="tel:0000000000"><small>TEL</small>000-0000-0000</a>
+      <p style="font-size:12px;margin-top:14px">〒367-0216　埼玉県本庄市児玉町金屋274-1</p>
+      <div class="label">営業時間</div>
+      <p style="font-size:12.5px">18:00 – 21:00　［月・水・金・日］</p>
+      <div class="label">定休日</div>
+      <p style="font-size:12.5px">火・木・土</p>
+    </div>
+  </div>
+</footer>
+
+<div style="margin-top:48px"><img src="images/land.jpg" alt="周辺の風景"></div>
+<p class="copy">© YORIMICHI CONDITIONING</p>
+
+<div class="mcta">
+  <!-- ▼ 差し替え：LINE / Googleフォーム のURL -->
+  <a href="#line">LINEで予約</a>
+  <a href="#form">フォームで予約</a>
+</div>
+
+<div class="sns">
+  <a href="#line" aria-label="LINEで予約">LINE</a>
+  <a href="#" aria-label="Instagram">IG</a>
+</div>
+
+</body>
+</html>
