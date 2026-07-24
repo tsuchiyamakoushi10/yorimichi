@@ -5,13 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>よりみちコンディショニング｜埼玉県本庄市児玉町</title>
 <meta name="description" content="埼玉県本庄市児玉町のよりみちコンディショニング。筋肉だけでなく、関節から整えます。月・水・金・日の18時から21時、完全予約制。">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:url" content="https://yorimichi-gamma.vercel.app/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="よりみちコンディショニング｜埼玉県本庄市児玉町">
-<meta property="og:description" content="筋肉だけでなく、関節から整えます。月・水・金・日の18時から21時、完全予約制。">
-<meta property="og:image" content="https://yorimichi-gamma.vercel.app/images/ogp.jpg">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
@@ -25,7 +18,6 @@
   --mist:#f5f6f8;
   --pad:22px;
   --sec:96px;
-  --maxw:1120px;
 }
 @media(min-width:768px){:root{--pad:40px;--sec:150px}}
 @media(min-width:1100px){:root{--pad:60px;--sec:190px}}
@@ -41,19 +33,18 @@ body{
 img{display:block;width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 section{margin-bottom:var(--sec)}
-.wrap{padding:0 var(--pad);max-width:var(--maxw);margin-inline:auto}
+.wrap{padding:0 var(--pad)}
 .narrow{max-width:520px}
 
 /* ---- header ---- */
-header{display:flex;justify-content:space-between;align-items:flex-start;padding:22px var(--pad) 0;max-width:var(--maxw);margin-inline:auto}
+header{display:flex;justify-content:space-between;align-items:flex-start;padding:22px var(--pad) 0}
 .logo .en{font-family:"Jost",sans-serif;font-weight:300;font-size:10px;letter-spacing:.3em;line-height:1.75}
 .logo .bar{width:70px;height:1px;background:var(--ink-soft);margin:8px 0}
 .logo .ja{font-size:12.5px;letter-spacing:.16em;font-weight:500}
 .logo .ja b{font-size:15px;letter-spacing:.22em;font-weight:500}
 nav{display:none}
 @media(min-width:900px){
-  nav{display:flex;gap:26px;font-size:12px;letter-spacing:.18em}
-  nav a{writing-mode:vertical-rl}
+  nav{display:flex;gap:26px;writing-mode:vertical-rl;font-size:12px;letter-spacing:.18em}
   nav a:hover{color:var(--ink-soft)}
 }
 
@@ -65,7 +56,7 @@ nav{display:none}
 .label{font-size:11px;color:var(--ink-soft);letter-spacing:.22em;border-bottom:1px solid var(--rule);display:block;padding-bottom:8px;margin:34px 0 16px}
 
 /* ---- open bar ---- */
-.openbar{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:26px auto 0;max-width:var(--maxw);padding:15px var(--pad);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 16px;font-size:12px;letter-spacing:.16em}
+.openbar{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:26px;padding:15px var(--pad);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 16px;font-size:12px;letter-spacing:.16em}
 .openbar b{font-weight:500}
 .openbar .num{font-family:"Jost",sans-serif;font-weight:300;font-size:15px;letter-spacing:.06em}
 .openbar .sep{width:1px;height:12px;background:var(--rule)}
@@ -73,27 +64,24 @@ nav{display:none}
 @media(min-width:768px){.openbar{gap:10px 22px;font-size:12.5px}}
 
 /* ---- hero ---- */
-.hero{position:relative;overflow:hidden;margin-bottom:var(--sec);animation:hFade 1.4s ease both}
-.hero img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:58% 18%;animation:hZoom 7s cubic-bezier(.2,.6,.2,1) both}
+.hero{position:relative;margin-bottom:var(--sec);animation:hFade 1.4s ease both}
+.hero img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:58% 18%}
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(358deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 22%,rgba(255,255,255,.55) 40%,rgba(255,255,255,0) 58%)}
-.hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 var(--pad) 30px;max-width:var(--maxw);margin-inline:auto}
-.hero h1{font-size:22px;font-weight:500;line-height:2;letter-spacing:.14em}
-.hero .sub{color:var(--ink-soft);font-size:12.5px;margin-top:20px;line-height:2.3}
-.rv{opacity:0;transform:translateY(16px)}
-.rv.in{opacity:1;transform:none;transition:opacity 1.1s cubic-bezier(.22,.7,.2,1),transform 1.1s cubic-bezier(.22,.7,.2,1)}
-.hero .sub.rv.in{transition-delay:.22s}
+  background:linear-gradient(178deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 22%,rgba(255,255,255,.55) 40%,rgba(255,255,255,0) 58%)}
+.hero-copy{position:absolute;top:0;left:0;right:0;z-index:2;padding:34px var(--pad) 0}
+.hero h1{font-size:22px;font-weight:500;line-height:2;letter-spacing:.14em;animation:hRise 1s cubic-bezier(.22,.7,.2,1) both .3s}
+.hero .sub{color:var(--ink-soft);font-size:12.5px;margin-top:20px;line-height:2.3;animation:hRise 1s cubic-bezier(.22,.7,.2,1) both .6s}
 @media(min-width:768px){
   .hero img{aspect-ratio:16/9;object-position:66% 22%}
   .hero::after{background:linear-gradient(92deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 26%,rgba(255,255,255,.5) 44%,rgba(255,255,255,0) 62%)}
-  .hero-copy{top:50%;bottom:auto;transform:translateY(-50%);padding:0 var(--pad)}
-  .hero h1,.hero .sub{max-width:min(480px,52%)}
+  .hero-copy{top:50%;transform:translateY(-50%);right:auto;width:52%;padding:0 0 0 var(--pad)}
   .hero h1{font-size:27px}
 }
 @media(min-width:1100px){
+  .hero-copy{width:46%}
   .hero h1{font-size:32px}
 }
-@keyframes hZoom{from{transform:scale(1.06)}to{transform:none}}
+@keyframes hRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @keyframes hFade{from{opacity:0}to{opacity:1}}
 
 /* ---- pillars ---- */
@@ -192,9 +180,10 @@ nav{display:none}
 /* ---- mobile cta ---- */
 .mcta{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--ink)}
 .mcta a{flex:1;color:#fff;text-align:center;padding:16px 8px;font-size:12.5px;letter-spacing:.14em}
+.mcta a.main{flex:2.6}
 .mcta a+a{border-left:1px solid rgba(255,255,255,.22)}
 @media(min-width:768px){.mcta{display:none}}
-@media(max-width:767px){body{padding-bottom:54px}}
+@media(max-width:767px){.sns{display:none}body{padding-bottom:54px}}
 
 /* ---- button ---- */
 .btn{display:inline-flex;align-items:center;margin-top:28px}
@@ -217,6 +206,8 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
 @media(min-width:900px){.finfo{grid-template-columns:220px 1fr}}
 .tel{font-family:"Jost",sans-serif;font-weight:300;font-size:24px;letter-spacing:.06em;display:inline-flex;align-items:center;gap:11px}
 .tel small{background:var(--ink);color:#fff;border-radius:999px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.06em;flex-shrink:0}
+.sns{position:fixed;right:12px;bottom:14px;display:grid;gap:8px;z-index:9}
+.sns a{width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.05em;font-family:"Jost",sans-serif}
 .copy{text-align:center;font-size:10px;color:var(--ink-faint);padding:36px 0 70px;letter-spacing:.18em;font-family:"Jost",sans-serif}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
@@ -261,7 +252,7 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
     <div class="pillar">
       <span class="n">01</span>
       <b>同じところが、<br>また痛くなる。</b>
-      <p>その場がやわらいでも、原因が残っていれば戻ります。からだの根本が変わらないかぎり、同じ張りは繰り返します。</p>
+      <p>その場がやわらいでも、原因が残っていれば戻ります。からだの根本が変わらないかぎり、同じ症状は繰り返します。</p>
     </div>
     <div class="pillar">
       <span class="n">02</span>
@@ -285,7 +276,7 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
       <p class="narrow" style="margin-top:22px">からだの芯である骨格から整えることで、負担を少なく、最短での変化を目指します。</p>
       <p class="narrow" style="margin-top:22px">多くの施術は筋肉にはたらきかけます。よりみちは、関節から入ります。身につけるまでに3〜4年かかった技術です。</p>
       <div class="stats">
-        <div class="stat"><b>6<em>年</em></b><span>ふなと川接骨院<br>グループで勤務</span></div>
+        <div class="stat"><b>6<em>年</em></b><span>高崎の接骨院で<br>勤務</span></div>
         <div class="stat"><b>15<em>人</em></b><span>1日あたり<br>年間およそ4,000人</span></div>
         <div class="stat"><b>24,000<em>人</em></b><span>これまでに<br>担当した人数</span></div>
       </div>
@@ -293,9 +284,9 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
     <div>
       <div class="label">経歴</div>
       <table class="cv">
-        <tr><th>2019年</th><td>柔道整復師 免許取得</td></tr>
-        <tr><th>2020年</th><td>ふなと川接骨院グループ（群馬県高崎市）勤務。1日およそ15人を担当</td></tr>
-        <tr><th>2021年</th><td>関節からのアプローチを習得。身につけるまでに3〜4年を要した</td></tr>
+        <tr><th>◯◯◯◯年</th><td>柔道整復師 免許取得</td></tr>
+        <tr><th>◯◯◯◯年</th><td>ふなと川接骨院グループ（群馬県高崎市）勤務。1日およそ15人を担当</td></tr>
+        <tr><th>◯◯◯◯年</th><td>関節からのアプローチを習得。身につけるまでに3〜4年を要した</td></tr>
         <tr><th>2026年</th><td>6年の勤務を経て、埼玉県本庄市児玉町にてよりみちコンディショニング開業</td></tr>
       </table>
     </div>
@@ -426,31 +417,31 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
   </table>
   <p class="note">すべて1枠30分・税込です。<br>初回は、はじめての方だけの料金です。2回目からは上の金額になります。<br>お支払いは現金のみとなります。</p>
   <div class="notice">いまは、からだを整えることに絞っています。今後、届出が済んでケガも診られるようになりましたら、できることが増えるぶん料金を改定する予定です。それまでは、この価格でお受けします。</div>
-  <div class="center"><a class="btn btn-fill" href="https://calendar.app.google/SUduUa7rh79VzSyG6" target="_blank" rel="noopener"><span>空き枠を見て予約する</span><i></i><u></u></a></div>
+    <div class="center"><a class="btn btn-fill" href="https://calendar.app.google/SUduUa7rh79VzSyG6" target="_blank" rel="noopener"><span>空き時間を見て予約する</span><i></i><u></u></a></div>
 </section>
 
-<section class="wrap" id="reserve">
+<section class="wrap">
   <h2 class="head">営業時間・ご予約</h2>
   <div class="hours">
     <dl>
       <dt>営業日</dt><dd>月・水・金・日<br><span style="font-size:11px;color:var(--ink-soft)">日曜も営業しています</span></dd>
       <dt>時間</dt><dd>18:00 – 21:00<br><span style="font-size:11px;color:var(--ink-soft)">30分刻み。最終のご予約は20:30です</span></dd>
-      <dt>ご予約</dt><dd>完全予約制<br><span style="font-size:11px;color:var(--ink-soft)">予約ページから24時間受付</span></dd>
+      <dt>ご予約</dt><dd>完全予約制<br><span style="font-size:11px;color:var(--ink-soft)">予約ページから24時間受付・その場で確定します</span></dd>
     </dl>
   </div>
   <div class="rsv">
     <h3 style="font-size:13.5px;font-weight:500;letter-spacing:.18em">ご予約の流れ</h3>
     <div class="rsv-steps">
-      <div><em>01</em><p>空き枠を選ぶ<span>カレンダーから、ご都合のよい30分枠を選べます</span></p></div>
-      <div><em>02</em><p>その場で確定<span>確認メールが自動で届きます。折り返しをお待たせしません</span></p></div>
+      <div><em>01</em><p>空いている時間を選ぶ<span>予約ページに空き枠が出ています</span></p></div>
+      <div><em>02</em><p>その場で確定<span>確認メールが自動で届きます</span></p></div>
       <div><em>03</em><p>当日、お越しください<span>専用の入口からお入りください</span></p></div>
     </div>
     <div class="rsv-btns">
-      <a class="btn btn-fill" href="https://calendar.app.google/SUduUa7rh79VzSyG6" target="_blank" rel="noopener"><span>空き枠を見て予約する</span><i></i><u></u></a>
+            <a class="btn btn-fill" href="https://calendar.app.google/SUduUa7rh79VzSyG6" target="_blank" rel="noopener"><span>空き時間を見て予約する</span><i></i><u></u></a>
       <!-- ▼ 差し替え：LINE公式アカウントの友だち追加URL -->
-      <a class="btn" href="#line"><span>LINEで相談する</span><i></i><u></u></a>
+      <a class="btn" href="#line" target="_blank" rel="noopener"><span>LINEで相談する</span><i></i><u></u></a>
     </div>
-    <p style="font-size:11px;color:var(--ink-soft);margin-top:20px;line-height:2">ご予約は24時間受け付けています。LINEのご相談は、施術中はご返信が遅れることがあります。</p>
+    <p style="font-size:11px;color:var(--ink-soft);margin-top:20px;line-height:2">予約ページは24時間受け付けています。<br>初めての方には、ご予約後に簡単な問診をお送りします。ご記入いただくと当日の30分をそのまま施術にあてられます。<br>ご不明な点はLINEからどうぞ。施術中はご返信が遅れることがあります。</p>
   </div>
 </section>
 
@@ -483,7 +474,7 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
       <p style="font-size:11px;color:var(--ink-soft);margin-top:12px">痛くなる前に、寄り道を。</p>
     </div>
     <div>
-      <a class="tel" href="tel:08087355716"><small>TEL</small>080-8735-5716</a>
+      <a class="tel" href="tel:0000000000"><small>TEL</small>000-0000-0000</a>
       <p style="font-size:12px;margin-top:14px">〒367-0216　埼玉県本庄市児玉町金屋274-1</p>
       <div class="label">営業時間</div>
       <p style="font-size:12.5px">18:00 – 21:00　［月・水・金・日］</p>
@@ -497,28 +488,15 @@ footer{border-top:1px solid var(--rule);padding-top:40px}
 <p class="copy">© YORIMICHI CONDITIONING</p>
 
 <div class="mcta">
-  <a href="https://calendar.app.google/SUduUa7rh79VzSyG6" target="_blank" rel="noopener">予約する</a>
-  <!-- ▼ 差し替え：LINE公式アカウントの友だち追加URL -->
-  <a href="#line">LINEで相談</a>
+  <!-- ▼ 差し替え：LINE URL -->
+  <a href="https://calendar.app.google/SUduUa7rh79VzSyG6" class="main">空き時間を見て予約</a>
+  <a href="#line">LINE</a>
 </div>
 
-<script>
-/* ヒーローのコピーを、画面に入った時点でふわりと出す。
-   JS無効・IntersectionObserver非対応・動きを減らす設定のときは
-   何もせず、最初から表示された状態のままにする。 */
-(function(){
-  if(!('IntersectionObserver' in window))return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var els=document.querySelectorAll('.hero h1,.hero .sub');
-  for(var i=0;i<els.length;i++)els[i].classList.add('rv');
-  var io=new IntersectionObserver(function(es){
-    for(var k=0;k<es.length;k++){
-      if(es[k].isIntersecting){es[k].target.classList.add('in');io.unobserve(es[k].target)}
-    }
-  },{threshold:.25});
-  for(var j=0;j<els.length;j++)io.observe(els[j]);
-})();
-</script>
+<div class="sns">
+  <a href="https://calendar.app.google/SUduUa7rh79VzSyG6" aria-label="予約する">予約</a>
+  <a href="#" aria-label="Instagram">IG</a>
+</div>
 
 </body>
 </html>
