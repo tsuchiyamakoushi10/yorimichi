@@ -73,10 +73,11 @@ nav{display:none}
 @media(min-width:768px){.openbar{gap:10px 22px;font-size:12.5px}}
 
 /* ---- hero ---- */
-.hero{position:relative;margin-bottom:var(--sec);animation:hFade 1.4s ease both}
+.hero{position:relative;overflow:hidden;margin-bottom:var(--sec);animation:hFade 1.4s ease both}
 .hero img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:58% 18%;animation:hZoom 7s cubic-bezier(.2,.6,.2,1) both}
-.hero::after{content:"";display:none;position:absolute;inset:0;pointer-events:none}
-.hero-copy{padding:30px var(--pad) 0;max-width:var(--maxw);margin-inline:auto}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(358deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 22%,rgba(255,255,255,.55) 40%,rgba(255,255,255,0) 58%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 var(--pad) 30px;max-width:var(--maxw);margin-inline:auto}
 .hero h1{font-size:22px;font-weight:500;line-height:2;letter-spacing:.14em}
 .hero .sub{color:var(--ink-soft);font-size:12.5px;margin-top:20px;line-height:2.3}
 .rv{opacity:0;transform:translateY(16px)}
@@ -84,8 +85,8 @@ nav{display:none}
 .hero .sub.rv.in{transition-delay:.22s}
 @media(min-width:768px){
   .hero img{aspect-ratio:16/9;object-position:66% 22%}
-  .hero::after{display:block;background:linear-gradient(92deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 26%,rgba(255,255,255,.5) 44%,rgba(255,255,255,0) 62%)}
-  .hero-copy{position:absolute;top:50%;left:0;right:0;z-index:2;transform:translateY(-50%);padding:0 var(--pad)}
+  .hero::after{background:linear-gradient(92deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.9) 26%,rgba(255,255,255,.5) 44%,rgba(255,255,255,0) 62%)}
+  .hero-copy{top:50%;bottom:auto;transform:translateY(-50%);padding:0 var(--pad)}
   .hero h1,.hero .sub{max-width:min(480px,52%)}
   .hero h1{font-size:27px}
 }
