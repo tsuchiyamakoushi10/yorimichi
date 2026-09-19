@@ -97,7 +97,9 @@
 index.html          全部ここに入っている（CSSもインライン、末尾に短いJS）
 vercel.json         framework:null 固定。消すとNext.js誤検出でビルドが落ちる
 favicon.svg
-robots.txt
+robots.txt          sitemap.xml の場所を記載
+sitemap.xml         検索エンジン向け。大きく内容を変えたら lastmod を更新
+llms.txt            AI検索向けの事業概要（本文と同じ事実だけを書く。禁止語ルールも同じ）
 images/
   hero.jpg          ヒーロー（施術のようす）
   land.jpg          フッター下の風景
@@ -117,9 +119,17 @@ images/
 - [x] ~~電話番号~~ 設定済み（080-8735-5716）
 - [x] ~~経歴の年~~ 設定済み（2019／2020／2021年）
 - [x] ~~公開URL（OGPメタタグ）~~ 設定済み
-- [ ] LINE公式アカウントの友だち追加URL（`href="#line"` を全置換／2箇所）
-- [ ] 専用入口の位置（`建物◯側`）
-- [ ] Googleマップの埋め込み（現在はプレースホルダーのdiv）
+- [x] ~~LINE公式アカウントの友だち追加URL~~ 設定済み
+- [x] ~~専用入口の位置~~ 案内ごと削除済み
+- [x] ~~Googleマップの埋め込み~~ 設置済み
+- [ ] Googleアナリティクス（GA4）の測定ID（`G-XXXXXXXXXX`／head内に1箇所。置き換えるまで読み込まれない）
+
+### 営業時間・料金・住所を変えたとき
+
+本文だけでなく、以下も同じ内容に直すこと（食い違うと検索・AIの回答が古いままになる）。
+
+- `index.html` の `application/ld+json`（構造化データ）
+- `llms.txt`
 
 ---
 
