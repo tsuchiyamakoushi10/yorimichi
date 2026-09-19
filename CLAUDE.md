@@ -100,6 +100,7 @@ favicon.svg
 robots.txt          sitemap.xml の場所を記載
 sitemap.xml         検索エンジン向け。大きく内容を変えたら lastmod を更新
 llms.txt            AI検索向けの事業概要（本文と同じ事実だけを書く。禁止語ルールも同じ）
+google72b557f6343b463f.html  サーチコンソールの所有権確認用。消すと確認が外れるので削除禁止
 images/
   hero.jpg          ヒーロー（施術のようす）
   land.jpg          フッター下の風景
